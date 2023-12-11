@@ -5,8 +5,8 @@ var headerEl = document.getElementsByClassName("header")[0];
 // our functions
 var changeBackGroundColor = function (valInput) {
     var lengthCount = valInput.length;
-    var blurValue = 100;
-    var varer = blurValue - lengthCount * 7;
+    var blurValue = 20;
+    var varer = blurValue - lengthCount * 2;
     if (varer <= 0) {
         varer = 0;
     }

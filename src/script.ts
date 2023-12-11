@@ -7,8 +7,8 @@ const headerEl: any = document.getElementsByClassName("header")[0];
 // our functions
 const changeBackGroundColor = (valInput) => {
   let lengthCount = valInput.length;
-  let blurValue = 100;
-  let varer = blurValue - lengthCount * 7;
+  let blurValue = 20;
+  let varer = blurValue - lengthCount * 2;
   if (varer <= 0) {
     varer = 0;
   }
