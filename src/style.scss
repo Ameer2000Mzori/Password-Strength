@@ -7,3 +7,42 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .form {
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+
+    .text-Wrap {
+      height: 25%;
+      width: 100%;
+
+      h1 {
+        font-family: $fontOne;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        font-family: $fontOne;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
