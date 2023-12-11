@@ -6,20 +6,25 @@ body {
 }
 
 .header {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1682687221006-b7fd60cf9dd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  filter: blur(1000px);
+  transition: all 100ms;
 }
 
-.header .form {
+.form {
+  position: absolute;
   height: 400px;
-  z-index: 10;
+  z-index: 50;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -29,14 +34,17 @@ body {
   padding: 15px;
   background-color: rgba(245, 245, 245, 0.63);
   border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.header .form .text-Wrap {
+.form .text-Wrap {
   height: 25%;
   width: 100%;
 }
 
-.header .form .text-Wrap h1 {
+.form .text-Wrap h1 {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: 600;
@@ -44,14 +52,14 @@ body {
   margin: 0;
 }
 
-.header .form .text-Wrap p {
+.form .text-Wrap p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   padding: 0;
   margin: 0;
 }
 
-.header .form .info-Inputs {
+.form .info-Inputs {
   height: 50%;
   width: 90%;
   text-align: center;
@@ -62,38 +70,26 @@ body {
   padding-left: 5px;
 }
 
-.header .form .info-Inputs label {
+.form .info-Inputs label {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 
-.header .form .info-Inputs input {
+.form .info-Inputs input {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   width: 90%;
   padding: 0 5px;
+  outline: none;
 }
 
-.header .form .submit-Btn {
+.form .submit-Btn {
   width: 85%;
   height: 35px;
   border-radius: 15px;
   color: whitesmoke;
   background-color: black;
   border: solid whitesmoke 3px;
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1682687221006-b7fd60cf9dd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  filter: blur(110px);
-  z-index: -1;
 }

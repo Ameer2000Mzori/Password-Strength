@@ -5,16 +5,23 @@ const headerEl: any = document.getElementsByClassName("header")[0];
 // our global veribales
 
 // our functions
-// const changeBackGroundColor = (valInput) => {
-//   let lengthCount = valInput.length;
-//   console.log(lengthCount);
-//   headerEl.style.filter = `blur(${lengthCount * 10}-px)`;
-// };
+const changeBackGroundColor = (valInput) => {
+  let lengthCount = valInput.length;
+  let blurValue = 100;
+  let varer = blurValue - lengthCount * 7;
+  if (varer <= 0) {
+    varer = 0;
+  }
+  console.log(varer);
+  updateBackGroundEffect(varer);
+};
 
-// // our eventlinsters
-// passwordInput.addEventListener("input", (e: any) => {
-//   let valInput = e.target.value;
-//   changeBackGroundColor(valInput);
-// });
+const updateBackGroundEffect = (blurValue) => {
+  headerEl.style.filter = `blur(${blurValue}px)`;
+};
 
-// changeBackGroundColor(50);
+// our eventlinsters
+passwordInput.addEventListener("input", (e: any) => {
+  let valInput: Number = e.target.value;
+  changeBackGroundColor(valInput);
+});
