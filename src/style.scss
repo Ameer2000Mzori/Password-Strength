@@ -17,13 +17,16 @@ body {
   height: 100vh;
 
   .form {
-    height: 600px;
+    height: 400px;
     width: 300px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
     padding: 15px;
+    background-color: antiquewhite;
+    border-radius: 1rem;
 
     .text-Wrap {
       height: 25%;
@@ -42,6 +45,29 @@ body {
         font-size: 15px;
         padding: 0;
         margin: 0;
+      }
+    }
+
+    .info-Inputs {
+      height: 50%;
+      width: 90%;
+      text-align: center;
+      align-items: start;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      label {
+        font-size: 20px;
+        font-family: $fontOne;
+        font-weight: 600;
+      }
+
+      input {
+        font-size: 20px;
+        font-family: $fontOne;
+        font-weight: 600;
+        padding: 0 5px;
       }
     }
   }
