@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 15px;
-  background-color: antiquewhite;
+  background-color: rgba(196, 197, 196, 0.63);
   border-radius: 1rem;
 }
 
@@ -55,6 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding-left: 5px;
 }
 
 .header .form .info-Inputs label {
@@ -67,5 +68,15 @@ body {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  width: 90%;
   padding: 0 5px;
+}
+
+.header .form .submit-Btn {
+  width: 85%;
+  height: 35px;
+  border-radius: 15px;
+  color: whitesmoke;
+  background-color: black;
+  border: solid whitesmoke 3px;
 }
